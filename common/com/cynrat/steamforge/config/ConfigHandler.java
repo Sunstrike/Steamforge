@@ -1,4 +1,4 @@
-package com.cynrat.config;
+package com.cynrat.steamforge.config;
 
 import java.io.File;
 

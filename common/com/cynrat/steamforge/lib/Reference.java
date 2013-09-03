@@ -1,4 +1,4 @@
-package com.cynrat.lib;
+package com.cynrat.steamforge.lib;
 
 public class Reference {
 

@@ -1,8 +1,8 @@
-package com.cynrat;
+package com.cynrat.steamforge;
 
-import com.cynrat.lib.Reference;
-import com.cynrat.network.PacketHandler;
-import com.cynrat.proxies.CommonProxy;
+import com.cynrat.steamforge.lib.Reference;
+import com.cynrat.steamforge.network.PacketHandler;
+import com.cynrat.steamforge.proxies.CommonProxy;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;

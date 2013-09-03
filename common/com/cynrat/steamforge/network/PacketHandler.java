@@ -1,4 +1,4 @@
-package com.cynrat.network;
+package com.cynrat.steamforge.network;
 
 import net.minecraft.network.INetworkManager;
 import net.minecraft.network.packet.Packet250CustomPayload;
