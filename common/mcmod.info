@@ -1,0 +1,18 @@
+[
+{
+    "modid" : "Steamforge",
+    "name" : "Steamforge",
+    "version" : "0.0.0",
+    "credits" : "Name: Sunstrike",
+    "authors" : [
+                    "Cynrat"
+                ],
+    "description" : "An example mod as a part of Vswe's Summer courses",
+    "url" : "monodive.co.uk",
+    "updateUrl" : "",
+    "logoFile" : "",
+    "parent" : "",
+    "screenshots" : [
+    ]
+}
+]
