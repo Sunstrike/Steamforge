@@ -1,6 +1,6 @@
 package com.cynrat.steamforge.lib;
 
-public class BlockRef {
+public class BlockOreRef {
 	
 	public static int ORE_COPPER_ID;
 	

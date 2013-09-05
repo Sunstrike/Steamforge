@@ -6,7 +6,7 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.Icon;
 
-import com.cynrat.steamforge.lib.BlockRef;
+import com.cynrat.steamforge.lib.BlockOreRef;
 import com.cynrat.steamforge.lib.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -18,13 +18,13 @@ public class BlockZincOre extends Block {
 		super(id, Material.rock);
 		setHardness(2.5F);
 		setCreativeTab(CreativeTabs.tabBlock);
-		setUnlocalizedName(BlockRef.ORE_ZINC_UNLOC_NAME);
+		setUnlocalizedName(BlockOreRef.ORE_ZINC_UNLOC_NAME);
 	}
 	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister register) {
-		blockIcon = register.registerIcon(Reference.ASSET_LOC + BlockRef.ORE_ZINC_TEX);
+		blockIcon = register.registerIcon(Reference.ASSET_LOC + BlockOreRef.ORE_ZINC_TEX);
 	}
 	
 	@Override

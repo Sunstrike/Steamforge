@@ -2,8 +2,8 @@ package com.cynrat.steamforge.config;
 
 import java.io.File;
 
-import com.cynrat.steamforge.lib.BlockRef;
-import com.cynrat.steamforge.lib.ItemRef;
+import com.cynrat.steamforge.lib.BlockOreRef;
+import com.cynrat.steamforge.lib.ItemIngotRef;
 
 import net.minecraftforge.common.Configuration;
 
@@ -16,13 +16,15 @@ public class ConfigHandler {
 		
 		config.load();
 		
-		BlockRef.ORE_COPPER_ID = config.getBlock(BlockRef.ORE_COPPER_KEY, BlockRef.ORE_COPPER_DEFAULT).getInt();
-		BlockRef.ORE_TIN_ID = config.getBlock(BlockRef.ORE_TIN_KEY, BlockRef.ORE_TIN_DEFAULT).getInt();
-		BlockRef.ORE_ZINC_ID = config.getBlock(BlockRef.ORE_ZINC_KEY, BlockRef.ORE_ZINC_DEFAULT).getInt();
+		BlockOreRef.ORE_COPPER_ID = config.getBlock(BlockOreRef.ORE_COPPER_KEY, BlockOreRef.ORE_COPPER_DEFAULT).getInt();
+		BlockOreRef.ORE_TIN_ID = config.getBlock(BlockOreRef.ORE_TIN_KEY, BlockOreRef.ORE_TIN_DEFAULT).getInt();
+		BlockOreRef.ORE_ZINC_ID = config.getBlock(BlockOreRef.ORE_ZINC_KEY, BlockOreRef.ORE_ZINC_DEFAULT).getInt();
 		
-		ItemRef.INGOT_COPPER_ID = config.getItem(ItemRef.INGOT_COPPER_KEY, ItemRef.INGOT_COPPER_DEFAULT).getInt() - 256;
-		ItemRef.INGOT_TIN_ID = config.getItem(ItemRef.INGOT_TIN_KEY, ItemRef.INGOT_TIN_DEFAULT).getInt() - 256;
-		ItemRef.INGOT_ZINC_ID = config.getItem(ItemRef.INGOT_ZINC_KEY, ItemRef.INGOT_ZINC_DEFAULT).getInt() - 256;
+		ItemIngotRef.INGOT_BRASS_ID = config.getItem(ItemIngotRef.INGOT_BRASS_KEY, ItemIngotRef.INGOT_BRASS_DEFAULT).getInt() - 256;
+		ItemIngotRef.INGOT_BRONZE_ID = config.getItem(ItemIngotRef.INGOT_BRONZE_KEY, ItemIngotRef.INGOT_BRONZE_DEFAULT).getInt() - 256;
+		ItemIngotRef.INGOT_COPPER_ID = config.getItem(ItemIngotRef.INGOT_COPPER_KEY, ItemIngotRef.INGOT_COPPER_DEFAULT).getInt() - 256;
+		ItemIngotRef.INGOT_TIN_ID = config.getItem(ItemIngotRef.INGOT_TIN_KEY, ItemIngotRef.INGOT_TIN_DEFAULT).getInt() - 256;
+		ItemIngotRef.INGOT_ZINC_ID = config.getItem(ItemIngotRef.INGOT_ZINC_KEY, ItemIngotRef.INGOT_ZINC_DEFAULT).getInt() - 256;
 		
 		config.save();
 	}

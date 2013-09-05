@@ -1,6 +1,6 @@
 package com.cynrat.steamforge.items;
 
-import com.cynrat.steamforge.lib.ItemRef;
+import com.cynrat.steamforge.lib.ItemIngotRef;
 import com.cynrat.steamforge.lib.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -18,13 +18,13 @@ public class ItemTinIngot extends Item {
 	}
 	
 	public String getUnlocalizedName(ItemStack itemstack) {
-		return ItemRef.INGOT_TIN_UNLOC_NAME;
+		return ItemIngotRef.INGOT_TIN_UNLOC_NAME;
 	}
 	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister register) {
-		itemIcon = register.registerIcon(Reference.ASSET_LOC + ItemRef.INGOT_TIN_ICON);
+		itemIcon = register.registerIcon(Reference.ASSET_LOC + ItemIngotRef.INGOT_TIN_ICON);
 	}
 	
 }

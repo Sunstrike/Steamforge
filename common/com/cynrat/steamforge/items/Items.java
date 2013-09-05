@@ -1,7 +1,7 @@
 package com.cynrat.steamforge.items;
 
 import com.cynrat.steamforge.blocks.Blocks;
-import com.cynrat.steamforge.lib.ItemRef;
+import com.cynrat.steamforge.lib.ItemIngotRef;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -10,20 +10,26 @@ import net.minecraft.item.ItemStack;
 
 public class Items {
 
+	public static Item brassIngot;
+	public static Item bronzeIngot;
 	public static Item copperIngot;
 	public static Item tinIngot;
 	public static Item zincIngot;
 	
 	public static void init() {
-		copperIngot = new ItemCopperIngot(ItemRef.INGOT_COPPER_ID);
-		tinIngot = new ItemTinIngot(ItemRef.INGOT_TIN_ID);
-		zincIngot = new ItemZincIngot(ItemRef.INGOT_ZINC_ID);
+		brassIngot = new ItemBrassIngot(ItemIngotRef.INGOT_BRASS_ID);
+		bronzeIngot = new ItemBronzeIngot(ItemIngotRef.INGOT_BRONZE_ID);
+		copperIngot = new ItemCopperIngot(ItemIngotRef.INGOT_COPPER_ID);
+		tinIngot = new ItemTinIngot(ItemIngotRef.INGOT_TIN_ID);
+		zincIngot = new ItemZincIngot(ItemIngotRef.INGOT_ZINC_ID);
 	}
 	
 	public static void loadNames() {
-		LanguageRegistry.addName(copperIngot, ItemRef.INGOT_COPPER_NAME);
-		LanguageRegistry.addName(tinIngot, ItemRef.INGOT_TIN_NAME);
-		LanguageRegistry.addName(zincIngot, ItemRef.INGOT_ZINC_NAME);
+		LanguageRegistry.addName(brassIngot, ItemIngotRef.INGOT_BRASS_NAME);
+		LanguageRegistry.addName(bronzeIngot, ItemIngotRef.INGOT_BRONZE_NAME);
+		LanguageRegistry.addName(copperIngot, ItemIngotRef.INGOT_COPPER_NAME);
+		LanguageRegistry.addName(tinIngot, ItemIngotRef.INGOT_TIN_NAME);
+		LanguageRegistry.addName(zincIngot, ItemIngotRef.INGOT_ZINC_NAME);
 	}
 	
 	public static void registerRecipes() {

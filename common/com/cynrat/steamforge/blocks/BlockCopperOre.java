@@ -8,7 +8,7 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.Icon;
 
-import com.cynrat.steamforge.lib.BlockRef;
+import com.cynrat.steamforge.lib.BlockOreRef;
 import com.cynrat.steamforge.lib.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -21,13 +21,13 @@ public class BlockCopperOre extends Block {
 		setCreativeTab(CreativeTabs.tabBlock);
 		setHardness(2.5F);
 		setStepSound(Block.soundStoneFootstep);
-		setUnlocalizedName(BlockRef.ORE_COPPER_UNLOC_NAME);
+		setUnlocalizedName(BlockOreRef.ORE_COPPER_UNLOC_NAME);
 	}
 	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister register) {
-		blockIcon = register.registerIcon(Reference.ASSET_LOC + BlockRef.ORE_COPPER_TEX);
+		blockIcon = register.registerIcon(Reference.ASSET_LOC + BlockOreRef.ORE_COPPER_TEX);
 	}
 	
 	@Override

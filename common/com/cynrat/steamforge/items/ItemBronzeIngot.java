@@ -8,23 +8,19 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
-public class ItemZincIngot extends Item {
-	
-	public ItemZincIngot(int id) {
+public class ItemBronzeIngot extends Item {
+
+	public ItemBronzeIngot(int id) {
 		super(id);
 		setCreativeTab(CreativeTabs.tabMaterials);
-	}
-	
-	public String getUnlocalizedName(ItemStack itemstack) {
-		return ItemIngotRef.INGOT_ZINC_UNLOC_NAME;
+		setUnlocalizedName(ItemIngotRef.INGOT_BRONZE_UNLOC_NAME);
 	}
 	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister register) {
-		itemIcon = register.registerIcon(Reference.ASSET_LOC + ItemIngotRef.INGOT_ZINC_ICON);
+		itemIcon = register.registerIcon(Reference.ASSET_LOC + ItemIngotRef.INGOT_BRONZE_ICON);
 	}
-
+	
 }
