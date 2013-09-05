@@ -1,5 +1,8 @@
 package com.cynrat.steamforge;
 
+import com.cynrat.steamforge.blocks.Blocks;
+import com.cynrat.steamforge.config.ConfigHandler;
+import com.cynrat.steamforge.items.Items;
 import com.cynrat.steamforge.lib.Reference;
 import com.cynrat.steamforge.network.PacketHandler;
 import com.cynrat.steamforge.proxies.CommonProxy;
@@ -20,16 +23,23 @@ public class Steamforge {
 	@Instance(Reference.ID)
 	public static Steamforge steamforge;
 	
-	@SidedProxy(clientSide = "com.cynrat.proxies.ClientProxy", serverSide = "com.cynrat.proxies.CommonProxy")
+	@SidedProxy(clientSide = "com.cynrat.steamforge.proxies.ClientProxy", serverSide = "com.cynrat.steamforge.proxies.CommonProxy")
 	public static CommonProxy proxy;
 	
 	@EventHandler
 	public static void init(FMLPreInitializationEvent event) {
-		
+		ConfigHandler.init(event.getSuggestedConfigurationFile());
+		Items.init();
+		Blocks.init();
 	}
 	
 	@EventHandler
 	public static void load(FMLInitializationEvent event) {
+		Items.loadNames();
+		Items.registerRecipes();
+		
+		Blocks.loadNames();
+		
 		
 	}
 	
