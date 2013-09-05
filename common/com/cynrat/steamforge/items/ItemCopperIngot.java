@@ -16,12 +16,10 @@ public class ItemCopperIngot extends Item {
 	public ItemCopperIngot(int id) {
 		super(id);
 		setCreativeTab(CreativeTabs.tabMaterials);
+		setUnlocalizedName(ItemIngotRef.INGOT_COPPER_UNLOC_NAME);
 	}
 	
-	@Override
-	public String getUnlocalizedName(ItemStack itemstack) {
-		return ItemIngotRef.INGOT_COPPER_UNLOC_NAME;
-	}
+	
 	
 	@Override
 	@SideOnly(Side.CLIENT)

@@ -15,10 +15,7 @@ public class ItemTinIngot extends Item {
 	public ItemTinIngot(int id) {
 		super(id);
 		setCreativeTab(CreativeTabs.tabMaterials);
-	}
-	
-	public String getUnlocalizedName(ItemStack itemstack) {
-		return ItemIngotRef.INGOT_TIN_UNLOC_NAME;
+		setUnlocalizedName(ItemIngotRef.INGOT_TIN_UNLOC_NAME);
 	}
 	
 	@Override

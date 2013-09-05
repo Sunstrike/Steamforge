@@ -15,10 +15,7 @@ public class ItemZincIngot extends Item {
 	public ItemZincIngot(int id) {
 		super(id);
 		setCreativeTab(CreativeTabs.tabMaterials);
-	}
-	
-	public String getUnlocalizedName(ItemStack itemstack) {
-		return ItemIngotRef.INGOT_ZINC_UNLOC_NAME;
+		setUnlocalizedName(ItemIngotRef.INGOT_ZINC_UNLOC_NAME);
 	}
 	
 	@Override
