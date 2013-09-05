@@ -1,6 +1,11 @@
 package com.cynrat.steamforge.items;
 
 import com.cynrat.steamforge.blocks.Blocks;
+import com.cynrat.steamforge.items.materials.ItemBrassIngot;
+import com.cynrat.steamforge.items.materials.ItemBronzeIngot;
+import com.cynrat.steamforge.items.materials.ItemCopperIngot;
+import com.cynrat.steamforge.items.materials.ItemTinIngot;
+import com.cynrat.steamforge.items.materials.ItemZincIngot;
 import com.cynrat.steamforge.lib.ItemIngotRef;
 
 import cpw.mods.fml.common.registry.GameRegistry;

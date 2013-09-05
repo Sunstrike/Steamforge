@@ -1,4 +1,4 @@
-package com.cynrat.steamforge.items;
+package com.cynrat.steamforge.items.materials;
 
 import com.cynrat.steamforge.lib.ItemIngotRef;
 import com.cynrat.steamforge.lib.Reference;

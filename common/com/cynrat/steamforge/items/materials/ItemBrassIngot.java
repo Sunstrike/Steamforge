@@ -1,4 +1,4 @@
-package com.cynrat.steamforge.items;
+package com.cynrat.steamforge.items.materials;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
