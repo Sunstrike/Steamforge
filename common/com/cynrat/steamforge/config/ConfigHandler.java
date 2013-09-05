@@ -4,6 +4,7 @@ import java.io.File;
 
 import com.cynrat.steamforge.lib.BlockOreRef;
 import com.cynrat.steamforge.lib.ItemIngotRef;
+import com.cynrat.steamforge.lib.ItemToolRef;
 
 import net.minecraftforge.common.Configuration;
 
@@ -25,6 +26,8 @@ public class ConfigHandler {
 		ItemIngotRef.INGOT_COPPER_ID = config.getItem(ItemIngotRef.INGOT_COPPER_KEY, ItemIngotRef.INGOT_COPPER_DEFAULT).getInt() - 256;
 		ItemIngotRef.INGOT_TIN_ID = config.getItem(ItemIngotRef.INGOT_TIN_KEY, ItemIngotRef.INGOT_TIN_DEFAULT).getInt() - 256;
 		ItemIngotRef.INGOT_ZINC_ID = config.getItem(ItemIngotRef.INGOT_ZINC_KEY, ItemIngotRef.INGOT_ZINC_DEFAULT).getInt() - 256;
+		
+		ItemToolRef.TOOL_STEAMHAMMER_ID = config.getItem(ItemToolRef.TOOL_STEAMHAMMER_KEY, ItemToolRef.TOOL_STEAMHAMMER_DEFAULT).getInt() - 256;
 		
 		config.save();
 	}
