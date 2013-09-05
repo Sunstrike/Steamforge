@@ -39,8 +39,6 @@ public class Steamforge {
 		Items.registerRecipes();
 		
 		Blocks.loadNames();
-		
-		
 	}
 	
 	@EventHandler
