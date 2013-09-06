@@ -1,5 +1,8 @@
 package com.cynrat.steamforge;
 
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraftforge.common.EnumHelper;
+
 import com.cynrat.steamforge.blocks.Blocks;
 import com.cynrat.steamforge.config.ConfigHandler;
 import com.cynrat.steamforge.items.Items;
@@ -18,7 +21,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 
 @Mod(modid = Reference.ID, name = Reference.NAME, version = Reference.VERS)
 @NetworkMod(channels = {Reference.CHANNEL}, clientSideRequired = true, serverSideRequired = false, packetHandler = PacketHandler.class)
-public class Steamforge {	
+public class Steamforge {
 	
 	@Instance(Reference.ID)
 	public static Steamforge steamforge;

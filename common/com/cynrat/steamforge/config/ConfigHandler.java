@@ -2,11 +2,12 @@ package com.cynrat.steamforge.config;
 
 import java.io.File;
 
+import net.minecraftforge.common.Configuration;
+
 import com.cynrat.steamforge.lib.BlockOreRef;
+import com.cynrat.steamforge.lib.ItemCompRef;
 import com.cynrat.steamforge.lib.ItemIngotRef;
 import com.cynrat.steamforge.lib.ItemToolRef;
-
-import net.minecraftforge.common.Configuration;
 
 public class ConfigHandler {
 	
@@ -28,6 +29,8 @@ public class ConfigHandler {
 		ItemIngotRef.INGOT_ZINC_ID = config.getItem(ItemIngotRef.INGOT_ZINC_KEY, ItemIngotRef.INGOT_ZINC_DEFAULT).getInt() - 256;
 		
 		ItemToolRef.TOOL_STEAMHAMMER_ID = config.getItem(ItemToolRef.TOOL_STEAMHAMMER_KEY, ItemToolRef.TOOL_STEAMHAMMER_DEFAULT).getInt() - 256;
+		
+		ItemCompRef.COG_BRASS_ID = config.getItem(ItemCompRef.COG_BRASS_KEY, ItemCompRef.COG_BRASS_DEFAULT).getInt() - 256;
 		
 		config.save();
 	}
