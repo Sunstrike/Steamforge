@@ -31,6 +31,7 @@ public class ConfigHandler {
 		ItemToolRef.TOOL_STEAMHAMMER_ID = config.getItem(ItemToolRef.TOOL_STEAMHAMMER_KEY, ItemToolRef.TOOL_STEAMHAMMER_DEFAULT).getInt() - 256;
 		
 		ItemCompRef.COG_BRASS_ID = config.getItem(ItemCompRef.COG_BRASS_KEY, ItemCompRef.COG_BRASS_DEFAULT).getInt() - 256;
+		ItemCompRef.COG_ASSEM_ID = config.getItem(ItemCompRef.COG_ASSEM_KEY, ItemCompRef.COG_ASSEM_DEFAULT).getInt() - 256;
 		
 		config.save();
 	}

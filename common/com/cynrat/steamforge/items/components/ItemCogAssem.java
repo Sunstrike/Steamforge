@@ -10,18 +10,18 @@ import com.cynrat.steamforge.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemBrassCog extends Item {
+public class ItemCogAssem extends Item {
 	
-	public ItemBrassCog(int id) {
+	public ItemCogAssem(int id) {
 		super(id);
 		setCreativeTab(Items.tabComponents);
-		setUnlocalizedName(ItemCompRef.COG_BRASS_UNLOC);
+		setUnlocalizedName(ItemCompRef.COG_ASSEM_UNLOC);
 	}
 	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister register) {
-		itemIcon = register.registerIcon(Reference.ASSET_LOC + ItemCompRef.COG_BRASS_TEX);
+		itemIcon = register.registerIcon(Reference.ASSET_LOC + ItemCompRef.COG_ASSEM_TEX);
 	}
-	
+
 }

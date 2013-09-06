@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 
 import com.cynrat.steamforge.blocks.Blocks;
 import com.cynrat.steamforge.items.components.ItemBrassCog;
+import com.cynrat.steamforge.items.components.ItemCogAssem;
 import com.cynrat.steamforge.items.materials.ItemBrassIngot;
 import com.cynrat.steamforge.items.materials.ItemBronzeIngot;
 import com.cynrat.steamforge.items.materials.ItemCopperIngot;
@@ -75,6 +76,7 @@ public class Items {
 	
 	// components
 	public static Item brassCog;
+	public static Item cogAssem;
 	
 	public static void init() {
 		
@@ -101,6 +103,7 @@ public class Items {
 		
 		// comps
 		brassCog = new ItemBrassCog(ItemCompRef.COG_BRASS_ID);
+		cogAssem = new ItemCogAssem(ItemCompRef.COG_ASSEM_ID);
 				
 	}
 	
@@ -116,6 +119,7 @@ public class Items {
 		
 		// comps
 		LanguageRegistry.addName(brassCog, ItemCompRef.COG_BRASS_NAME);
+		LanguageRegistry.addName(cogAssem, ItemCompRef.COG_ASSEM_NAME);
 	}
 	
 	public static void registerRecipes() {
