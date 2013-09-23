@@ -1,0 +1,24 @@
+﻿- add steam generator
+
+- add steam pump
+
+- use 'world pipes'
+	- this means use cavity pipes rather than itemised pipes
+	- does not require item
+	- pump required to move steam after set distance (1 - 3 chunks?) of 'world pipe'
+	- use negative pressure fluids?
+
+- add basic 'machines'
+	- furnace powered by steam (makes no sense, but then again not many mods do)
+	- some form of macerator powered on steam... maybe gear assembly required?
+
+- automatons?
+	- need to research modelling & ai
+		- have book on ai
+		- use VSWE's course for info on modelling for mc
+
+- brass goggles
+	- provide info on automatons and machines
+		- automaton level of intelligence?
+		- machine steam levels, maybe pressure too?
+		
